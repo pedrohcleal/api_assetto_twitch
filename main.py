@@ -99,19 +99,36 @@ def get_info_carro():
 
 @app.get("/carro_atual")
 def carro():
-    return get_car_model()
+    try:
+        car = get_car_model()
+    except:
+        return 'sem nenhum carro no momento'
+    return car
 
 @app.get("/pista_atual")
 def pista():
-    return get_track_name()
+    try:
+        track = get_track_name()
+    except:
+        return 'sem pista no momento'
+    return track
 
 @app.get("/info_carro")
 def info_carro():
-    return get_info_carro()
+    try:
+        info_carr = get_info_carro()
+    except:
+        return 'sem carro no momento'
+    return info_carr
+
 
 @app.get("/info_pista")
 def info_pista():
-    return get_info_pista()
+    try:
+        info_track = get_info_pista()
+    except:
+        return 'sem pista no momento'
+    return info_track
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
