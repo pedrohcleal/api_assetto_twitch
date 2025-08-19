@@ -109,11 +109,3 @@ País: Italy, Cidade: Monza (MI), Comprimento: 5.793 km
   ```
 
 ---
-
-## 📜 Licença
-
-Projeto para uso pessoal/educacional. Sem afiliação oficial com a Kunos Simulazioni.
-
----
-
-👉 Quer que eu já monte também um **`requirements.txt`** baseado no teu código (Flask + pyaccsharedmemory) pra complementar o projeto?
